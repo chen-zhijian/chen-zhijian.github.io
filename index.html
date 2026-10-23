@@ -3,32 +3,187 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Zhijian Chen (陈智健) | Personal Website</title>
+  <meta name="description" content="Zhijian Chen's mathematical research projects: Kobayashi chains, plurisubharmonic exhaustions, and human–AI collaborative mathematics.">
+  <meta name="theme-color" content="#f5f7fb">
+  <title>Zhijian Chen (陈智健) | Mathematics</title>
   <style>
-    body {
-      max-width: 750px;
-      margin: 60px auto;
-      padding: 0 24px;
-      font-family: Arial, sans-serif;
-      line-height: 1.7;
-      color: #243047;
-      background: #f5f7fb;
+    :root {
+      color-scheme: light;
+      --ink: #243047;
+      --muted: #596579;
+      --blue: #315bd6;
+      --line: #dbe1ed;
+      --paper: #ffffff;
+      --background: #f5f7fb;
     }
-    h1 { color: #315bd6; }
-    a { color: #315bd6; }
+    * { box-sizing: border-box; }
+    html { scroll-padding-top: 24px; }
+    body {
+      margin: 0;
+      background: var(--background);
+      color: var(--ink);
+      font: 16px/1.75 Arial, "Microsoft YaHei", sans-serif;
+      -webkit-text-size-adjust: 100%;
+    }
+    a { color: var(--blue); text-underline-offset: 4px; }
+    a:hover { text-decoration-thickness: 2px; }
+    a:focus-visible { outline: 3px solid var(--blue); outline-offset: 5px; }
+    .container { width: min(100% - 48px, 960px); margin-inline: auto; }
+    .skip-link {
+      position: absolute; top: -80px; left: 24px; z-index: 10;
+      background: var(--paper); padding: 8px 16px;
+    }
+    .skip-link:focus { top: 8px; }
+    .site-header {
+      display: flex; align-items: center; justify-content: space-between;
+      gap: 24px; padding-block: 26px; border-bottom: 1px solid var(--line);
+    }
+    .site-name { color: var(--ink); font-weight: 700; text-decoration: none; }
+    nav { display: flex; gap: 26px; font-size: 14px; }
+    nav a { color: var(--muted); text-decoration: none; }
+    nav a:hover { color: var(--blue); text-decoration: underline; }
+    .hero { padding: 72px 0 58px; max-width: 760px; }
+    .eyebrow {
+      margin: 0 0 18px; color: var(--blue); font-size: 12px;
+      font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
+    }
+    h1, h2, h3 { font-family: Georgia, "Times New Roman", "Songti SC", SimSun, serif; font-weight: 400; }
+    h1 { margin: 0 0 24px; font-size: clamp(38px, 6vw, 58px); line-height: 1.2; letter-spacing: -.035em; }
+    .chinese-name { display: inline-block; margin-left: 12px; font-size: .55em; letter-spacing: .04em; color: var(--muted); }
+    .intro { max-width: 680px; margin: 0; font-size: 19px; line-height: 1.75; color: var(--muted); }
+    .interests { display: flex; flex-wrap: wrap; gap: 8px; list-style: none; padding: 0; margin: 26px 0 0; }
+    .interests li { padding: 4px 12px; border: 1px solid var(--line); border-radius: 4px; font-size: 12px; color: var(--muted); }
+    .section-heading { display: flex; align-items: baseline; justify-content: space-between; gap: 20px; margin-bottom: 22px; }
+    h2 { margin: 0; font-size: 30px; line-height: 1.3; letter-spacing: -.02em; }
+    .section-heading > p { margin: 0; color: var(--muted); font-size: 14px; }
+    .paper {
+      display: grid; grid-template-columns: 74px minmax(0, 1fr); gap: 24px;
+      padding: 32px; margin-bottom: 20px; border: 1px solid var(--line);
+      border-radius: 8px; background: var(--paper);
+    }
+    .paper-number { color: var(--blue); font-size: 13px; font-weight: 700; }
+    .paper-number span { display: block; margin-top: 5px; color: var(--muted); font-size: 12px; font-weight: 400; }
+    .paper-meta { display: flex; flex-wrap: wrap; align-items: center; gap: 8px 16px; margin-bottom: 12px; font-size: 12px; color: var(--muted); }
+    .status { background: #edf1fd; color: #284aad; padding: 2px 9px; border-radius: 3px; }
+    h3 { margin: 0; font-size: 26px; line-height: 1.35; letter-spacing: -.015em; }
+    h3 a { color: var(--ink); text-decoration: none; }
+    h3 a:hover { color: var(--blue); text-decoration: underline; }
+    .paper-summary { margin: 18px 0 0; }
+    .open-question { color: var(--muted); margin: 12px 0 0; font-size: 14px; }
+    .math { white-space: nowrap; font-family: Georgia, "Times New Roman", serif; }
+    sup, sub { font-size: .75em; line-height: 0; }
+    .paper-links { display: flex; flex-wrap: wrap; align-items: center; gap: 12px 22px; margin-top: 24px; font-size: 14px; }
+    .button { display: inline-block; padding: 8px 16px; background: var(--blue); color: white; border-radius: 4px; text-decoration: none; font-weight: 700; }
+    .button:hover { background: #2549b5; text-decoration: underline; }
+    .research-note { max-width: 780px; margin: 24px 0 0; color: var(--muted); font-size: 13px; }
+    .about { display: grid; grid-template-columns: 220px minmax(0, 1fr); gap: 40px; margin-top: 56px; padding: 40px 0; border-top: 1px solid var(--line); }
+    .about p { margin: 0 0 16px; }
+    .about p:last-child { margin-bottom: 0; }
+    .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid var(--line); padding: 22px 0 32px; font-size: 12px; color: var(--muted); }
+    .site-footer p { margin: 0; }
+    @media (max-width: 640px) {
+      .container { width: calc(100% - 32px); }
+      .site-header { align-items: flex-start; flex-direction: column; gap: 12px; padding-block: 20px; }
+      nav { gap: 24px; }
+      .hero { padding: 44px 0 40px; }
+      .chinese-name { display: block; margin: 12px 0 0; }
+      .intro { font-size: 17px; }
+      .section-heading { margin-bottom: 18px; }
+      h2 { font-size: 27px; }
+      .paper { grid-template-columns: 1fr; gap: 14px; padding: 24px; }
+      .paper-number { display: flex; align-items: baseline; gap: 12px; }
+      .paper-number span { margin: 0; }
+      h3 { font-size: 24px; }
+      .about { grid-template-columns: 1fr; gap: 20px; margin-top: 40px; padding: 32px 0; }
+    }
+    @media print {
+      body { background: white; font-size: 11pt; }
+      .container { width: 100%; }
+      .site-header, .skip-link, .interests { display: none; }
+      .hero { padding: 0 0 24px; }
+      h1 { font-size: 32pt; }
+      .paper { break-inside: avoid; padding: 20px; }
+      .button { color: var(--blue); background: none; padding: 0; }
+      .about { margin-top: 24px; padding: 24px 0; }
+    }
   </style>
 </head>
 <body>
-  <h1>Hello, I'm Zhijian Chen (陈智健)!</h1>
-  <p>Welcome to my personal website.</p>
+  <a class="skip-link" href="#main">Skip to content</a>
+  <header class="site-header container">
+    <a class="site-name" href="#main">Zhijian Chen</a>
+    <nav aria-label="Main navigation">
+      <a href="#research">Research</a>
+      <a href="#about">About</a>
+      <a href="https://github.com/chen-zhijian">GitHub</a>
+    </nav>
+  </header>
 
-  <h2>About me</h2>
-  <p>I'm now aiming to explore mathematical formalization, AI-assisted theorem proving, and human-AI collaborative mathematics.</p>
+  <main id="main" class="container">
+    <section class="hero" aria-labelledby="name">
+      <p class="eyebrow">Mathematics &amp; human–AI collaboration</p>
+      <h1 id="name">Zhijian Chen <span class="chinese-name" lang="zh-Hans">陈智健</span></h1>
+      <p class="intro">Exploring questions in several complex variables and complex geometry, alongside mathematical formalization and AI-assisted theorem proving.</p>
+      <ul class="interests" aria-label="Research interests">
+        <li>Several complex variables</li>
+        <li>Complex geometry</li>
+        <li>Human–AI collaborative mathematics</li>
+      </ul>
+    </section>
 
-  <h2>My projects</h2>
-  <p>Upcoming soon.</p>
+    <section id="research" aria-labelledby="research-heading">
+      <div class="section-heading">
+        <h2 id="research-heading">Research preprints</h2>
+        <p>2026</p>
+      </div>
 
-  <h2>Find me online</h2>
-  <a href="https://github.com/chen-zhijian">My GitHub profile</a>
+      <!-- Project 1: update the description and links here when the manuscript changes. -->
+      <article class="paper" aria-labelledby="kobayashi-title">
+        <div class="paper-number" aria-hidden="true">01 <span>2026</span></div>
+        <div>
+          <div class="paper-meta"><span class="status">Research draft</span><span>Kobayashi geometry</span></div>
+          <h3 id="kobayashi-title"><a href="https://github.com/chen-zhijian/kobayashi-chains/blob/main/preprints/001-kobayashi-chains/paper.pdf">Exact and approximate Kobayashi chains on strongly pseudoconvex domains</a></h3>
+          <p class="paper-summary">This project separates exact realization of the Kobayashi distance from approximation by holomorphic discs. It constructs a strongly pseudoconvex domain with a pair admitting no finite realizing chain. On each bounded <span class="math">C<sup>2</sup></span> strongly pseudoconvex domain Ω, it shows that <span class="math">O<sub>Ω</sub>(ε<sup>−1</sup>)</span> discs suffice for additive error ε, uniformly over all endpoint pairs. For its specific obstruction family, the number of discs can be reduced to <span class="math">O(log log(1/ε))</span>.</p>
+          <p class="open-question">The draft leaves the optimal approximation rate for the obstruction family open.</p>
+          <div class="paper-links" aria-label="Kobayashi chains resources">
+            <a class="button" href="https://github.com/chen-zhijian/kobayashi-chains/blob/main/preprints/001-kobayashi-chains/paper.pdf">Read paper</a>
+            <a href="https://github.com/chen-zhijian/kobayashi-chains">Repository</a>
+            <a href="https://github.com/chen-zhijian/kobayashi-chains/blob/main/overview.pdf">Overview PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <!-- Project 2: preserve the coauthor credit and the scope of the surface results. -->
+      <article class="paper" aria-labelledby="psh-title">
+        <div class="paper-number" aria-hidden="true">02 <span>2026</span></div>
+        <div>
+          <div class="paper-meta"><span class="status">Research draft</span><span>With Bo Xiao</span></div>
+          <h3 id="psh-title"><a href="https://github.com/chen-zhijian/psh-exhaustion/blob/main/preprints/001-psh-exhaustion/psh_exhaustion_refereed.pdf">Continuous and Smooth Plurisubharmonic Exhaustions: Threefold Counterexamples and Partial Results for Surfaces</a></h3>
+          <p class="paper-summary">Starting from Koike’s modified Grauert example, this project constructs Kähler and non-Kähler threefolds with locally Lipschitz plurisubharmonic exhaustions but no <span class="math">C<sup>2</sup></span> plurisubharmonic exhaustion. It also develops a line-bundle radius criterion and affirmative results for specified surface compactifications.</p>
+          <p class="open-question">The general regularization question in complex dimension two is not resolved by this work.</p>
+          <div class="paper-links" aria-label="Plurisubharmonic exhaustion resources">
+            <a class="button" href="https://github.com/chen-zhijian/psh-exhaustion/blob/main/preprints/001-psh-exhaustion/psh_exhaustion_refereed.pdf">Read paper</a>
+            <a href="https://github.com/chen-zhijian/psh-exhaustion">Repository</a>
+            <a href="https://github.com/chen-zhijian/psh-exhaustion/blob/main/overview.pdf">Overview PDF</a>
+          </div>
+        </div>
+      </article>
+
+      <p class="research-note">These research drafts were developed through human–AI collaboration. The repositories contain manuscript sources, review notes, and open questions. They are not proof-assistant formalizations.</p>
+    </section>
+
+    <section id="about" class="about" aria-labelledby="about-heading">
+      <h2 id="about-heading">About this work</h2>
+      <div>
+        <p>I am interested in mathematical formalization, AI-assisted theorem proving, and human–AI collaborative mathematics. This website brings together my current mathematical projects, with links to the manuscripts and the repositories documenting their development.</p>
+        <p><a href="https://github.com/chen-zhijian">Find me on GitHub</a></p>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer container">
+    <p>Zhijian Chen <span lang="zh-Hans">陈智健</span></p>
+    <p>Updated <time datetime="2026-10-23">23 October 2026</time></p>
+  </footer>
 </body>
 </html>
