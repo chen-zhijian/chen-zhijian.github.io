@@ -7,7 +7,7 @@ This responsive academic homepage collects five mathematical research projects. 
 ## Research repositories
 
 - [Kobayashi chains](https://github.com/chen-zhijian/kobayashi-chains)
-- [Plurisubharmonic exhaustions](https://github.com/chen-zhijian/psh-exhaustion)
+- [Plurisubharmonic exhaustions](https://github.com/chen-zhijian/psh-exhaustion) — with Bo Xiao
 - [Harmonic direct images](https://github.com/chen-zhijian/harmonic-direct-images) — with Zhuo Liu and Chenghao Qing
 - [Le Potier isomorphisms](https://github.com/chen-zhijian/le-potier-isomorphisms) — with Zhuo Liu and Chenghao Qing
 - [Nadel vanishing](https://github.com/chen-zhijian/nadel)
