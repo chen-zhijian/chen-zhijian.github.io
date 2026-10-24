@@ -2,36 +2,46 @@
 
 [Visit the website](https://chen-zhijian.github.io/)
 
-This is a small, responsive academic homepage featuring the Kobayashi chains and plurisubharmonic exhaustion research projects. It is a static GitHub Pages site: all page content and styling are in `index.html`. No Python, installation, or build step is needed to edit or preview it.
+This responsive academic homepage collects five mathematical research projects. It is a static GitHub Pages site: all page content and styling are in `index.html`. No installation or build step is needed to edit or preview it.
+
+## Research repositories
+
+- [Kobayashi chains](https://github.com/chen-zhijian/kobayashi-chains)
+- [Plurisubharmonic exhaustions](https://github.com/chen-zhijian/psh-exhaustion)
+- [Harmonic direct images](https://github.com/chen-zhijian/harmonic-direct-images) — with Zhuo Liu and Chenghao Qing
+- [Le Potier isomorphisms](https://github.com/chen-zhijian/le-potier-isomorphisms) — with Zhuo Liu and Chenghao Qing
+- [Nadel vanishing](https://github.com/chen-zhijian/nadel)
 
 ## Preview and edit locally
 
-1. Double-click `index.html` to open it in your browser.
-2. Open the same file in a text editor such as Notepad or Visual Studio Code.
-3. Edit the visible text between the HTML tags. Each project is marked by a comment in the source; the colors and layout are in the `<style>` section near the top.
-4. Save the file and refresh the browser to see the result.
+1. Open `index.html` in a browser.
+2. Edit the same file in a text editor. Each project is marked by a comment; the colors and layout are in the `<style>` section near the top.
+3. Refresh the browser and check the page at desktop and mobile widths.
+4. Review, commit, and push the website changes to `main`, then check the GitHub Pages deployment and the live page.
 
-The paper and overview links point to the PDFs in the two research repositories. Updating a PDF at the same repository path updates what readers reach from this website; you do not need to copy the PDFs into this repository.
+## Keep the manuscripts and website in sync
 
-## Upload the prepared changes with GitHub Desktop
+The website links directly to manuscript PDFs in the research repositories. It does not keep separate PDF copies.
 
-The prepared repository folder includes its Git history and is already connected to `chen-zhijian/chen-zhijian.github.io`.
+For harmonic direct images, Le Potier isomorphisms, and Nadel vanishing:
 
-1. In GitHub Desktop, select **File → Add local repository**.
-2. Choose the prepared `chen-zhijian.github.io` folder and select **Add repository**.
-3. Check that the current repository is `chen-zhijian.github.io` and the current branch is `main`.
-4. Review the changes to `index.html` and `README.md` in the **Changes** tab.
-5. Enter a summary such as `Add research preprints to personal website`, then click **Commit to main**.
-6. Click **Push origin**. If GitHub Desktop first asks you to fetch or pull newer changes, do that before pushing; review any resulting conflicts instead of discarding either version.
-7. Open the repository’s **Actions** tab and wait for the GitHub Pages deployment to finish. Then open the website and refresh it.
+1. Update the manuscript source in the relevant research repository.
+2. Run that repository’s documented build script and inspect the resulting `papers/paper_v1.pdf`. This path is the stable current-manuscript link, even when the manuscript is revised.
+3. Commit and push both the updated source and PDF to the research repository’s `main` branch.
+4. Check the paper link on the live website. The existing link reaches the updated PDF at the same path; no website edit is needed for a PDF-only revision.
 
-These local edits have not been pushed automatically. If the Pages deployment is not configured, go to **Settings → Pages** and choose **Deploy from a branch**, branch **main**, folder **/ (root)**, then click **Save**. No custom workflow is required for this HTML page. See [GitHub’s Pages publishing instructions](https://docs.github.com/en/pages/getting-started-with-github-pages/configuring-a-publishing-source-for-your-github-pages-site).
+For the Kobayashi and plurisubharmonic exhaustion projects, preserve the existing PDF paths linked in `index.html` and follow their repository instructions.
 
-If you use the ZIP backup instead of the prepared Git folder, first clone the existing website repository with GitHub Desktop (**File → Clone repository → URL**), then copy the ZIP’s `index.html` and `README.md` into that clone, replacing those two files. The ZIP contains the website files only, not the Git history.
+Titles, author credits, summaries, scope notes, and the website’s update date are maintained manually in `index.html`. Update and push this website repository whenever those details change, or when a manuscript path changes. A local source edit is not published until the corresponding repository is pushed.
 
 ## Research descriptions
 
-The project titles, scope, and PSH coauthor credit were checked against the public manuscript sources on 23 October 2026. Both projects are presented as research drafts. The Kobayashi double-logarithmic estimate is specific to the obstruction family; the draft leaves its optimal rate open. The PSH draft does not resolve the surface regularization problem in general. The public Kobayashi source currently leaves author metadata unset, so this page does not add a manuscript byline.
+The existing Kobayashi and plurisubharmonic exhaustion descriptions retain the scope recorded on 23 October 2026. The three additional descriptions and their author credits were checked against the supplied manuscript sources on 24 October 2026.
 
-- [Kobayashi chains repository](https://github.com/chen-zhijian/kobayashi-chains)
-- [Plurisubharmonic exhaustion repository](https://github.com/chen-zhijian/psh-exhaustion)
+- The Kobayashi double-logarithmic estimate is specific to its obstruction family; the optimal approximation rate is left open. Its source leaves author metadata unset, so the website does not add a manuscript byline.
+- The plurisubharmonic exhaustion draft does not resolve the general surface regularization problem.
+- The harmonic direct-image manuscript retains its infinitesimal-triviality, cohomology, and harmonic-variation hypotheses and attributes its extensions to established curvature and estimate methods.
+- The Le Potier manuscript distinguishes weighted canonical results under semipositivity assumptions from unweighted differential-form results for locally free sheaves.
+- The Nadel note derives vanishing from stated analytic inputs and retains the positivity requirements near the singular locus.
+
+The site presents research drafts and notes. Development and review records are linked where available; it does not claim that every project has a complete AI interaction history or a proof-assistant formalization.
