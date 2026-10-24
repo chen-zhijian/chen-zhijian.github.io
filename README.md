@@ -23,16 +23,13 @@ This responsive academic homepage collects five mathematical research projects. 
 
 The website links directly to manuscript PDFs in the research repositories. It does not keep separate PDF copies.
 
-For harmonic direct images, Le Potier isomorphisms, and Nadel vanishing:
+For harmonic direct images, Le Potier isomorphisms, and Nadel vanishing, the owner maintains the manuscripts in their original local LaTeX files. Automatic syncing is configured to check for changes every 15 minutes while the owner's computer and synchronization service are available. Successful runs publish each packaged source, rebuilt `papers/paper_v1.pdf`, and build manifest together. Failed builds leave the last published manuscript in place. The stable PDF links reach new revisions without copying PDFs into this website repository.
 
-1. Update the manuscript source in the relevant research repository.
-2. Run that repository’s documented build script and inspect the resulting `papers/paper_v1.pdf`. This path is the stable current-manuscript link, even when the manuscript is revised.
-3. Commit and push both the updated source and PDF to the research repository’s `main` branch.
-4. Check the paper link on the live website. The existing link reaches the updated PDF at the same path; no website edit is needed for a PDF-only revision.
+When one of these manuscripts changes, the maintenance agent reviews its title, author credits, summary, and scope notes in `index.html` against the revised source, and publishes website updates where needed. The website's update date is refreshed when its content changes. Compilation and consistency checks are not mathematical proof verification, and the sync process does not reconstruct or regenerate historical AI conversation or usage records.
+
+Other contributors can follow the research repository's documented build procedure, inspect the PDF, run its verification script, and commit the source, PDF, and build manifest together. Coordinate manuscript revisions with the owner so the original source and repository remain consistent. Update and push this website repository if the corresponding title, author credit, summary, scope, or link path changes, then check the live page and its paper link. A local source edit is not published until the corresponding repository is pushed.
 
 For the Kobayashi and plurisubharmonic exhaustion projects, preserve the existing PDF paths linked in `index.html` and follow their repository instructions.
-
-Titles, author credits, summaries, scope notes, and the website’s update date are maintained manually in `index.html`. Update and push this website repository whenever those details change, or when a manuscript path changes. A local source edit is not published until the corresponding repository is pushed.
 
 ## Research descriptions
 
