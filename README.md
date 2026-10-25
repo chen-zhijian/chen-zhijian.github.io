@@ -22,17 +22,28 @@ This responsive academic homepage collects six mathematical research projects, i
 
 ## Keep the manuscripts and website in sync
 
-The website links directly to manuscript PDFs in the research repositories. It does not keep separate PDF copies.
+Each project has a **Read paper** (or **Read survey**) link to its manuscript in the research repository, a **Repository** link, and a **PDF** link that opens a copy hosted on this website. The research repositories remain the source of the manuscripts. Website PDF copies are stored under `papers/`; `papers/manifest.json` records their source files and hashes.
 
-For harmonic direct images, Le Potier isomorphisms, and Nadel vanishing, the owner maintains the manuscripts in their original local LaTeX files. Automatic syncing is configured to check for changes every 15 minutes while the owner's computer and synchronization service are available. Successful runs publish each packaged source, rebuilt `papers/paper_v1.pdf`, and build manifest together. Failed builds leave the last published manuscript in place. The stable PDF links reach new revisions without copying PDFs into this website repository.
+| Project | Website PDF |
+| --- | --- |
+| Kobayashi chains | [papers/kobayashi-chains.pdf](papers/kobayashi-chains.pdf) |
+| Plurisubharmonic exhaustions | [papers/psh-exhaustion.pdf](papers/psh-exhaustion.pdf) |
+| Harmonic direct images | [papers/harmonic-direct-images.pdf](papers/harmonic-direct-images.pdf) |
+| Le Potier isomorphisms | [papers/le-potier-isomorphisms.pdf](papers/le-potier-isomorphisms.pdf) |
+| Nadel vanishing | [papers/nadel.pdf](papers/nadel.pdf) |
+| Complex variables problem collection | [papers/scv-problem-list.pdf](papers/scv-problem-list.pdf) |
+
+When a manuscript PDF is updated in its research repository, replace the corresponding website copy with that published PDF and refresh its source/hash record in the manifest. Check that the copy matches the source, commit and push the website changes, and verify the direct PDF link after GitHub Pages deploys. Keep the website paths above stable. The website copies do not update merely because a research repository changes.
+
+For harmonic direct images, Le Potier isomorphisms, and Nadel vanishing, the owner maintains the manuscripts in their original local LaTeX files. Automatic syncing is configured to check for changes every 15 minutes while the owner's computer and synchronization service are available. Successful runs publish each packaged source, rebuilt `papers/paper_v1.pdf`, and build manifest together. Failed builds leave the last published manuscript in place. The stable research-repository links reach new revisions. The separate website PDF copies must also be refreshed using the procedure above; the existing manuscript synchronization does not establish automatic synchronization of these website copies.
 
 When one of these manuscripts changes, the maintenance agent reviews its title, author credits, summary, and scope notes in `index.html` against the revised source, and publishes website updates where needed. The website's update date is refreshed when its content changes. Compilation and consistency checks are not mathematical proof verification, and the sync process does not reconstruct or regenerate historical AI conversation or usage records.
 
-Other contributors can follow the research repository's documented build procedure, inspect the PDF, run its verification script, and commit the source, PDF, and build manifest together. Coordinate manuscript revisions with the owner so the original source and repository remain consistent. Update and push this website repository if the corresponding title, author credit, summary, scope, or link path changes, then check the live page and its paper link. A local source edit is not published until the corresponding repository is pushed.
+Other contributors can follow the research repository's documented build procedure, inspect the PDF, run its verification script, and commit the source, PDF, and build manifest together. Coordinate manuscript revisions with the owner so the original source and repository remain consistent. Refresh and publish the website PDF copy when the manuscript PDF changes, and update the project entry if the corresponding title, author credit, summary, scope, or link path changes. Then check the live page, its research-repository link, and its direct PDF link. A local source edit is not published until the corresponding repository is pushed.
 
-For the Kobayashi and plurisubharmonic exhaustion projects, preserve the existing PDF paths linked in `index.html` and follow their repository instructions.
+For the Kobayashi and plurisubharmonic exhaustion projects, preserve the existing research-repository PDF paths used by **Read paper**, follow their repository instructions, and refresh the website copies listed above.
 
-For the complex variables problem collection, keep the current survey at `papers/scv-problem-list.pdf` and its source at `papers/src/scv-problem-list.tex` in the [research repository](https://github.com/chen-zhijian/scv-problem-list). The website links to that PDF and to `statistics.md`. When the survey changes, update its source, PDF, and statistics together, then review the page count, total number of problems, and status counts on this homepage. The stable PDF path reaches the latest committed version without a separate PDF copy in this website repository.
+For the complex variables problem collection, keep the current survey at `papers/scv-problem-list.pdf` and its source at `papers/src/scv-problem-list.tex` in the [research repository](https://github.com/chen-zhijian/scv-problem-list). The website keeps **Read survey** and **Problem statistics** linked to that repository, while **PDF** opens the website copy at `papers/scv-problem-list.pdf`. When the survey changes, update its source, PDF, and statistics together, refresh the website PDF copy and manifest, then review the page count, total number of problems, and status counts on this homepage.
 
 ## Research descriptions
 

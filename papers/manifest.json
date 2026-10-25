@@ -1,0 +1,72 @@
+{
+  "updated": "2026-10-25",
+  "purpose": "Full manuscript PDFs served directly by the personal website. Source revisions are recorded for maintenance.",
+  "files": [
+    {
+      "site_path": "papers/kobayashi-chains.pdf",
+      "source_repository": "chen-zhijian/kobayashi-chains",
+      "source_path": "preprints/001-kobayashi-chains/paper.pdf",
+      "source_commit": "2e126c2d51d531e94d6e5e9a3d4470d5834c4eea",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/kobayashi-chains/2e126c2d51d531e94d6e5e9a3d4470d5834c4eea/preprints/001-kobayashi-chains/paper.pdf",
+      "size_bytes": 613218,
+      "sha256": "02bebdf50cf76ab103a113158896dd0ed9972876abb4f018fdae9505cf81eb1f",
+      "git_blob_sha": "09b416aa4f5e87e4e575c844a4dc8d628d672b6c",
+      "pages": 34
+    },
+    {
+      "site_path": "papers/psh-exhaustion.pdf",
+      "source_repository": "chen-zhijian/psh-exhaustion",
+      "source_path": "preprints/001-psh-exhaustion/psh_exhaustion_refereed.pdf",
+      "source_commit": "2b84e92c2cac18be9de2ea650737e63dee7fa74a",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/2b84e92c2cac18be9de2ea650737e63dee7fa74a/preprints/001-psh-exhaustion/psh_exhaustion_refereed.pdf",
+      "size_bytes": 210003,
+      "sha256": "324dfb73297bce2a7fc6a83dabeaa6c21e77cfae3176cd1c88550997390447fa",
+      "git_blob_sha": "cf30c9b373802a921dd451a7f43c13c5861a81aa",
+      "pages": 28
+    },
+    {
+      "site_path": "papers/harmonic-direct-images.pdf",
+      "source_repository": "chen-zhijian/harmonic-direct-images",
+      "source_path": "papers/paper_v1.pdf",
+      "source_commit": "7183e0eddd6d1805ebbb0db79697d37d05fd9dd3",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/harmonic-direct-images/7183e0eddd6d1805ebbb0db79697d37d05fd9dd3/papers/paper_v1.pdf",
+      "size_bytes": 614209,
+      "sha256": "f25b304cbf4c32b77e17696540c89f137ca4d5c1d1bff09c8ea4903b003b2550",
+      "git_blob_sha": "c93e4b5cd04c8c1dce649443357cf75985290ef5",
+      "pages": 27
+    },
+    {
+      "site_path": "papers/le-potier-isomorphisms.pdf",
+      "source_repository": "chen-zhijian/le-potier-isomorphisms",
+      "source_path": "papers/paper_v1.pdf",
+      "source_commit": "24e30a7a581c61578fd330eac18c2c859794515f",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/le-potier-isomorphisms/24e30a7a581c61578fd330eac18c2c859794515f/papers/paper_v1.pdf",
+      "size_bytes": 193320,
+      "sha256": "a3f9f7665511396c7ecd3da4fac953581569c5d78f640479ac0dffd978f7632f",
+      "git_blob_sha": "ba0114e40301f9a1fcf658c131dfc8c628490899",
+      "pages": 19
+    },
+    {
+      "site_path": "papers/nadel.pdf",
+      "source_repository": "chen-zhijian/nadel",
+      "source_path": "papers/paper_v1.pdf",
+      "source_commit": "ad1207d8487b450d755a9a05fba34875fa6b9e44",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/nadel/ad1207d8487b450d755a9a05fba34875fa6b9e44/papers/paper_v1.pdf",
+      "size_bytes": 97087,
+      "sha256": "08f0ed9a56854c53a49b33c0cd6a086e988ebaacada7f4295f1ae9f62caf863b",
+      "git_blob_sha": "456f168dc6e2fd8260b9b6c169fba0c5b16beb34",
+      "pages": 6
+    },
+    {
+      "site_path": "papers/scv-problem-list.pdf",
+      "source_repository": "chen-zhijian/scv-problem-list",
+      "source_path": "papers/scv-problem-list.pdf",
+      "source_commit": "3b9bfe8fb34118d70a1f3d46322e2d1420840ae0",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/scv-problem-list/3b9bfe8fb34118d70a1f3d46322e2d1420840ae0/papers/scv-problem-list.pdf",
+      "size_bytes": 265382,
+      "sha256": "3848692067b2dc79b8f5df747e8903049696541f296c224a2d4271a9d23919e3",
+      "git_blob_sha": "dbb766fc013617c71077265912396148c8f64162",
+      "pages": 35
+    }
+  ]
+}
