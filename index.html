@@ -42,7 +42,13 @@
     nav { display: flex; gap: 26px; font-size: 14px; }
     nav a { color: var(--muted); text-decoration: none; }
     nav a:hover { color: var(--blue); text-decoration: underline; }
-    .hero { padding: 72px 0 58px; max-width: 760px; }
+    .hero {
+      display: grid; grid-template-columns: minmax(0, 1.2fr) minmax(0, 1fr);
+      align-items: start; gap: 32px; padding: 72px 0 58px;
+    }
+    .hero-copy { min-width: 0; }
+    .hero-art { margin: 0; }
+    .hero-art img { display: block; width: 100%; height: auto; }
     .eyebrow {
       margin: 0 0 18px; color: var(--blue); font-size: 12px;
       font-weight: 700; letter-spacing: .12em; text-transform: uppercase;
@@ -82,6 +88,10 @@
     .about p:last-child { margin-bottom: 0; }
     .site-footer { display: flex; flex-wrap: wrap; justify-content: space-between; gap: 8px 24px; border-top: 1px solid var(--line); padding: 22px 0 32px; font-size: 12px; color: var(--muted); }
     .site-footer p { margin: 0; }
+    @media (max-width: 800px) {
+      .hero { grid-template-columns: 1fr; gap: 28px; }
+      .hero-art { width: min(100%, 420px); justify-self: center; }
+    }
     @media (max-width: 640px) {
       .container { width: calc(100% - 32px); }
       .site-header { align-items: flex-start; flex-direction: column; gap: 12px; padding-block: 20px; }
@@ -122,15 +132,22 @@
 
   <main id="main" class="container">
     <section class="hero" aria-labelledby="name">
-      <p class="eyebrow">Mathematics &amp; human–AI collaboration</p>
-      <h1 id="name">Zhijian Chen <span class="chinese-name" lang="zh-Hans">陈智健</span></h1>
-      <p class="hero-contact">Email: <a href="mailto:chenzhijian@amss.ac.cn">chenzhijian@amss.ac.cn</a></p>
-      <p class="intro">Exploring questions in several complex variables and complex geometry, alongside mathematical formalization and AI-assisted theorem proving.</p>
-      <ul class="interests" aria-label="Research interests">
-        <li>Several complex variables</li>
-        <li>Complex geometry</li>
-        <li>Human–AI collaborative mathematics</li>
-      </ul>
+      <div class="hero-copy">
+        <p class="eyebrow">Mathematics &amp; human–AI collaboration</p>
+        <h1 id="name">Zhijian Chen <span class="chinese-name" lang="zh-Hans">陈智健</span></h1>
+        <p class="hero-contact">Email: <a href="mailto:chenzhijian@amss.ac.cn">chenzhijian@amss.ac.cn</a></p>
+        <p class="intro">Exploring questions in several complex variables and complex geometry, alongside mathematical formalization and AI-assisted theorem proving.</p>
+        <ul class="interests" aria-label="Research interests">
+          <li>Several complex variables</li>
+          <li>Complex geometry</li>
+          <li>Human–AI collaborative mathematics</li>
+        </ul>
+      </div>
+      <figure class="hero-art">
+        <img src="assets/complex-torus-formulas.svg" width="864" height="576"
+          alt="Complex torus C^g/Lambda with Hodge numbers h^{p,q} = binom(g,p) binom(g,q) and Betti numbers b_k = binom(2g,k)."
+          decoding="async">
+      </figure>
     </section>
 
     <section id="research" aria-labelledby="research-heading">
