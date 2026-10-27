@@ -61,11 +61,11 @@
       "site_path": "papers/scv-problem-list.pdf",
       "source_repository": "chen-zhijian/scv-problem-list",
       "source_path": "papers/scv-problem-list.pdf",
-      "source_commit": "756dacdfdf5d0ff0f47a0845c962e00dd924ffee",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/scv-problem-list/756dacdfdf5d0ff0f47a0845c962e00dd924ffee/papers/scv-problem-list.pdf",
-      "size_bytes": 700783,
-      "sha256": "085fc3f59c873a52a902effa00ba26eb37ea5c0d692d2b06c378413defecfbaa",
-      "git_blob_sha": "cbf36afab8ba98960e20bb510dc664c8e960367a",
+      "source_commit": "46c7a6d1fc757c5628a2b1a9c1b4adb200c7b8ec",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/scv-problem-list/46c7a6d1fc757c5628a2b1a9c1b4adb200c7b8ec/papers/scv-problem-list.pdf",
+      "size_bytes": 700658,
+      "sha256": "c8d4d04331e0393e0a6574a5ff3dabafd4d288bcb41dcad7fa78aee7812f5c51",
+      "git_blob_sha": "162cb2dc8be54a3bf315827e775f1b63c6086923",
       "pages": 37
     }
   ]
