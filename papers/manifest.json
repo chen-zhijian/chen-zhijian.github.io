@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-25",
+  "updated": "2026-10-27",
   "purpose": "Full manuscript PDFs served directly by the personal website. Source revisions are recorded for maintenance.",
   "files": [
     {
@@ -61,11 +61,11 @@
       "site_path": "papers/scv-problem-list.pdf",
       "source_repository": "chen-zhijian/scv-problem-list",
       "source_path": "papers/scv-problem-list.pdf",
-      "source_commit": "aa1b6492d32243a103359222214bf2a147cdaa00",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/scv-problem-list/aa1b6492d32243a103359222214bf2a147cdaa00/papers/scv-problem-list.pdf",
-      "size_bytes": 698511,
-      "sha256": "78bfb4131508c2640bc99179b13bc1f6e6b7c6f4bdbe3882690fa14ffb37e209",
-      "git_blob_sha": "c21a6dd52b4492a44ee558c98c1610aab3ab95b8",
+      "source_commit": "704140d5a7e02fd4624de8a33bf53238fd957ba1",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/scv-problem-list/704140d5a7e02fd4624de8a33bf53238fd957ba1/papers/scv-problem-list.pdf",
+      "size_bytes": 699118,
+      "sha256": "6633101482501fefda913c0de33572769490a12d50c57d3ebc236983e342d2e9",
+      "git_blob_sha": "7ee2242074b6a541794725ccef67f64b31984396",
       "pages": 37
     }
   ]

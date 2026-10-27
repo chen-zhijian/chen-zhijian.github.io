@@ -47,7 +47,7 @@ For the complex variables problem collection, keep the current survey at `papers
 
 ## Research descriptions
 
-The existing Kobayashi and plurisubharmonic exhaustion descriptions retain the scope recorded on 23 October 2026. The harmonic direct-image, Le Potier, and Nadel descriptions and their author credits were checked against the supplied manuscript sources on 24 October 2026. The complex variables survey description was checked against the supplied TeX and PDF dated 25 October 2026.
+The existing Kobayashi and plurisubharmonic exhaustion descriptions retain the scope recorded on 23 October 2026. The harmonic direct-image, Le Potier, and Nadel descriptions and their author credits were checked against the supplied manuscript sources on 24 October 2026. The complex variables survey description was checked against the revised TeX and PDF dated 27 October 2026. The Suita inequality attribution distinguishes Błocki's bounded planar case from Guan–Zhou's open Riemann surface case and includes their 2012 reference.
 
 - The Kobayashi double-logarithmic estimate is specific to its obstruction family; the optimal approximation rate is left open. Its source leaves author metadata unset, so the website does not add a manuscript byline.
 - The plurisubharmonic exhaustion draft does not resolve the general surface regularization problem.
