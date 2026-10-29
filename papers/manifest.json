@@ -17,12 +17,12 @@
       "site_path": "papers/psh-exhaustion.pdf",
       "source_repository": "chen-zhijian/psh-exhaustion",
       "source_path": "papers/paper_v1.pdf",
-      "source_commit": "6df951c987d5239e573ff4d5bff76fef90fda8a9",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/6df951c987d5239e573ff4d5bff76fef90fda8a9/papers/paper_v1.pdf",
-      "size_bytes": 490669,
-      "sha256": "a2e92724c52f13c311df1205ade7ccced4bdc6bfe0af490e2ad9b5b0fd8a92c2",
-      "git_blob_sha": "fc80cfe7a6a00ef163dc4ca75b5fc7e5ac49b449",
-      "pages": 20
+      "source_commit": "4e2454f3e368dfe5cabdd9d0a306e8aff4b2fa1e",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/4e2454f3e368dfe5cabdd9d0a306e8aff4b2fa1e/papers/paper_v1.pdf",
+      "size_bytes": 492773,
+      "sha256": "737e3d55ba2f3b51b4b7d744f5c8e7b4496952b7091d08850247ce5866d07adb",
+      "git_blob_sha": "14a0d5957778a69cd69d53b16b92832cad82ef0d",
+      "pages": 17
     },
     {
       "site_path": "papers/harmonic-direct-images.pdf",
