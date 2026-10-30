@@ -1,5 +1,5 @@
 {
-  "updated": "2026-10-29",
+  "updated": "2026-10-30",
   "purpose": "Full manuscript PDFs served directly by the personal website. Source revisions are recorded for maintenance.",
   "files": [
     {
@@ -25,15 +25,27 @@
       "pages": 17
     },
     {
+      "site_path": "papers/direct-image-descent.pdf",
+      "source_repository": "chen-zhijian/direct-image-descent",
+      "source_path": "papers/paper_v2.pdf",
+      "source_commit": "961b08c9cd566f575852bdb89ed2848a449705e4",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/direct-image-descent/961b08c9cd566f575852bdb89ed2848a449705e4/papers/paper_v2.pdf",
+      "size_bytes": 299953,
+      "sha256": "d6138277a10fe6bee790b993fca9d80d3e487c74ab80dd75c2e18db1a1230462",
+      "git_blob_sha": "6270f10ff099f6e282c0daa43f629dacc1db7da8",
+      "pages": 35
+    },
+    {
       "site_path": "papers/harmonic-direct-images.pdf",
-      "source_repository": "chen-zhijian/harmonic-direct-images",
-      "source_path": "papers/paper_v1.pdf",
-      "source_commit": "7183e0eddd6d1805ebbb0db79697d37d05fd9dd3",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/harmonic-direct-images/7183e0eddd6d1805ebbb0db79697d37d05fd9dd3/papers/paper_v1.pdf",
-      "size_bytes": 614209,
-      "sha256": "f25b304cbf4c32b77e17696540c89f137ca4d5c1d1bff09c8ea4903b003b2550",
-      "git_blob_sha": "c93e4b5cd04c8c1dce649443357cf75985290ef5",
-      "pages": 27
+      "source_repository": "chen-zhijian/direct-image-descent",
+      "source_path": "papers/paper_v2.pdf",
+      "source_commit": "961b08c9cd566f575852bdb89ed2848a449705e4",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/direct-image-descent/961b08c9cd566f575852bdb89ed2848a449705e4/papers/paper_v2.pdf",
+      "size_bytes": 299953,
+      "sha256": "d6138277a10fe6bee790b993fca9d80d3e487c74ab80dd75c2e18db1a1230462",
+      "git_blob_sha": "6270f10ff099f6e282c0daa43f629dacc1db7da8",
+      "pages": 35,
+      "compatibility_alias_for": "papers/direct-image-descent.pdf"
     },
     {
       "site_path": "papers/le-potier-isomorphisms.pdf",
