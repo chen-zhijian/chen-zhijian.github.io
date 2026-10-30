@@ -16,13 +16,13 @@
     {
       "site_path": "papers/psh-exhaustion.pdf",
       "source_repository": "chen-zhijian/psh-exhaustion",
-      "source_path": "papers/paper_v1.pdf",
-      "source_commit": "4e2454f3e368dfe5cabdd9d0a306e8aff4b2fa1e",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/4e2454f3e368dfe5cabdd9d0a306e8aff4b2fa1e/papers/paper_v1.pdf",
-      "size_bytes": 492773,
-      "sha256": "737e3d55ba2f3b51b4b7d744f5c8e7b4496952b7091d08850247ce5866d07adb",
-      "git_blob_sha": "14a0d5957778a69cd69d53b16b92832cad82ef0d",
-      "pages": 17
+      "source_path": "papers/paper_v2.pdf",
+      "source_commit": "8b0b0f15ab5bf513ca91b687caec007e64d72e5a",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/8b0b0f15ab5bf513ca91b687caec007e64d72e5a/papers/paper_v2.pdf",
+      "size_bytes": 549085,
+      "sha256": "4867e7a7f0a091d6b9d035185a014f3d31c336687624beb12591b9292b0bace6",
+      "git_blob_sha": "e80a3cd42cf8c10d92f87fbc01ce6b1c1aebaf98",
+      "pages": 24
     },
     {
       "site_path": "papers/direct-image-descent.pdf",
