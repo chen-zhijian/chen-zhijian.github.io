@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-05",
+  "updated": "2026-11-08",
   "purpose": "Full manuscript PDFs served directly by the personal website. Source revisions are recorded for maintenance.",
   "files": [
     {
@@ -16,14 +16,14 @@
     {
       "site_path": "papers/psh-exhaustion.pdf",
       "source_repository": "chen-zhijian/psh-exhaustion",
-      "source_path": "papers/paper_v4.pdf",
-      "source_commit": "b4e4c65e5a5d84d0d78fe612a60deae371b1c386",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/b4e4c65e5a5d84d0d78fe612a60deae371b1c386/papers/paper_v4.pdf",
-      "size_bytes": 565851,
-      "sha256": "079abfcac1f3f9d9a985c766c9108e92b60406f2ca76e2ebf768ad9faf6cc75f",
-      "git_blob_sha": "9e1afa48ffaaef5734d51bf0d0b0f23f795f9ef5",
-      "pages": 29,
-      "version": 4
+      "source_path": "papers/paper_v5.pdf",
+      "source_commit": "4ba824780b682823f49102269c337aa6a37f07bc",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/4ba824780b682823f49102269c337aa6a37f07bc/papers/paper_v5.pdf",
+      "size_bytes": 313947,
+      "sha256": "777aaae14451ca06e8ebc6657f3158ffb00faffbbb318a59ff19972e6b7d4b50",
+      "git_blob_sha": "307ee0d6e062a54afddb587fc30b7485406fb96f",
+      "pages": 40,
+      "version": 5
     },
     {
       "site_path": "papers/direct-image-descent.pdf",
