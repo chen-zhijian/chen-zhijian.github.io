@@ -28,14 +28,14 @@
     {
       "site_path": "papers/surface-regularization.pdf",
       "source_repository": "chen-zhijian/surface-regularization",
-      "source_path": "papers/paper_v1.pdf",
-      "source_commit": "a29276cf6aecbfd73cb30e59a364f316f2ff411c",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/surface-regularization/a29276cf6aecbfd73cb30e59a364f316f2ff411c/papers/paper_v1.pdf",
-      "size_bytes": 140318,
-      "sha256": "00cbbc2183d56623a188d1756ca1aef334af758009542db033d6e375ad2f94aa",
-      "git_blob_sha": "0772bcdf29941353c8bc9db2567f5b4ca34237ea",
-      "pages": 11,
-      "version": 1
+      "source_path": "papers/paper_v2.pdf",
+      "source_commit": "ba16b3a9c6e747078d584de6f3740877997ab962",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/surface-regularization/ba16b3a9c6e747078d584de6f3740877997ab962/papers/paper_v2.pdf",
+      "size_bytes": 151206,
+      "sha256": "e7e3b6e196283589a9184c3e1e2881f3166fd0b9f32d2602c2529c02085ee33d",
+      "git_blob_sha": "09ee5524f2efa39eadddac4caf54450be4d79b02",
+      "pages": 13,
+      "version": 2
     },
     {
       "site_path": "papers/direct-image-descent.pdf",
