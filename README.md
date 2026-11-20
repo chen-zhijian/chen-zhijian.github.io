@@ -2,12 +2,13 @@
 
 [Visit the website](https://chen-zhijian.github.io/)
 
-This responsive academic homepage collects six mathematical research projects, including a survey and problem collection. It is a static GitHub Pages site: all page content and styling are in `index.html`. No installation or build step is needed to edit or preview it.
+This responsive academic homepage collects seven mathematical research projects, including a survey and problem collection. It is a static GitHub Pages site: all page content and styling are in `index.html`. No installation or build step is needed to edit or preview it.
 
 ## Research repositories
 
 - [Kobayashi chains](https://github.com/chen-zhijian/kobayashi-chains)
 - [Plurisubharmonic exhaustions](https://github.com/chen-zhijian/psh-exhaustion) — with Bo Xiao
+- [Surface regularization](https://github.com/chen-zhijian/surface-regularization) — with Bo Xiao
 - [Direct-image descent](https://github.com/chen-zhijian/direct-image-descent) — with Zhuo Liu and Chenghao Qing
 - [Le Potier isomorphisms](https://github.com/chen-zhijian/le-potier-isomorphisms) — with Zhuo Liu and Chenghao Qing
 - [Nadel vanishing](https://github.com/chen-zhijian/nadel)
@@ -28,6 +29,7 @@ Each project has a **Read paper** (or **Read survey**) link to its manuscript in
 | --- | --- |
 | Kobayashi chains | [papers/kobayashi-chains.pdf](papers/kobayashi-chains.pdf) |
 | Plurisubharmonic exhaustions | [papers/psh-exhaustion.pdf](papers/psh-exhaustion.pdf) |
+| Surface regularization | [papers/surface-regularization.pdf](papers/surface-regularization.pdf) |
 | Direct-image descent | [papers/direct-image-descent.pdf](papers/direct-image-descent.pdf) |
 | Le Potier isomorphisms | [papers/le-potier-isomorphisms.pdf](papers/le-potier-isomorphisms.pdf) |
 | Nadel vanishing | [papers/nadel.pdf](papers/nadel.pdf) |
@@ -54,7 +56,7 @@ The Kobayashi description retains the scope recorded on 23 October 2026. The plu
 The direct-image descent entry and its coauthor credits were checked against the v2 source dated 30 October 2026; its title, summary, scope, repository links, and website PDF copies were synchronized with that revision. The Le Potier and Nadel descriptions and their author credits were checked against the supplied manuscript sources on 24 October 2026. The complex variables survey description was checked against the revised TeX and PDF dated 27 October 2026. The Suita inequality attribution places Błocki (online 2012; print 2013) first for bounded planar domains, followed by Guan–Zhou (2012) for open Riemann surfaces. A cited remark explains Błocki's capacity-dependent extension estimate, its planar Suita application, and the sharpened estimates and auxiliary weights used in his proof. The same revision compares the survey with bibliography sources [1]–[4], selectively restores omitted subquestions and broader formulations, records historical prize attributions, and adds precise source citations and five references. The restored material remains within the existing numbered entries.
 
 - The Kobayashi double-logarithmic estimate is specific to its obstruction family; the optimal approximation rate is left open. Its source leaves author metadata unset, so the website does not add a manuscript byline.
-- The plurisubharmonic exhaustion draft does not resolve the general surface regularization problem.
+- Version 5 of the plurisubharmonic exhaustion paper, dated 8 November 2026, left the general surface regularization problem open. The separate 20 November draft by Zhijian Chen and Bo Xiao proposes a proof for all smooth complex surfaces and an extension to normal surfaces. It awaits independent mathematical review. [Read the companion manuscript](https://github.com/chen-zhijian/surface-regularization/blob/main/papers/paper_v1.pdf).
 - The direct-image descent manuscript treats prescribed metrics and two extremal product bidegree ranges. Its singular product statements retain multiplier ideals and minimum weighted fiberwise norms. Non-product descent for arbitrary singular semipositive line metrics is restricted to top adjoint degree. The smooth adjoint metric is identified with the Mourougane–Takayama metric, and counterexamples exclude unrestricted degreewise descent. Smooth dual Nakano positivity under infinitesimal triviality remains a complementary result with its stated cohomology hypotheses.
 - The Le Potier manuscript distinguishes weighted canonical results under semipositivity assumptions from unweighted differential-form results for locally free sheaves.
 - The Nadel note derives vanishing from stated analytic inputs and retains the positivity requirements near the singular locus.
