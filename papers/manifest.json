@@ -1,5 +1,5 @@
 {
-  "updated": "2026-11-20",
+  "updated": "2026-11-21",
   "purpose": "Full manuscript PDFs served directly by the personal website. Source revisions are recorded for maintenance.",
   "files": [
     {
@@ -16,14 +16,14 @@
     {
       "site_path": "papers/psh-exhaustion.pdf",
       "source_repository": "chen-zhijian/psh-exhaustion",
-      "source_path": "papers/paper_v5.pdf",
-      "source_commit": "53d935079458381a38ad2ae4a68041ddab6114d7",
-      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/53d935079458381a38ad2ae4a68041ddab6114d7/papers/paper_v5.pdf",
-      "size_bytes": 314122,
-      "sha256": "d6ca4a23ae518c80e6bfff4a6e90d346f2c95642a8327bceedc3b2c14a15a3f7",
-      "git_blob_sha": "2888fa650d094dce4a6fae5d2f7b77261922c03c",
-      "pages": 40,
-      "version": 5
+      "source_path": "papers/paper_v6.pdf",
+      "source_commit": "f5ea6ca596d06765bb40ea49fdb1b233e64d110c",
+      "source_url": "https://raw.githubusercontent.com/chen-zhijian/psh-exhaustion/f5ea6ca596d06765bb40ea49fdb1b233e64d110c/papers/paper_v6.pdf",
+      "size_bytes": 327220,
+      "sha256": "1a4b3654aaf6d3d7d1095a75e3f63e4d3decc32bc2df3e2fb5e2c18077928234",
+      "git_blob_sha": "6132d14bffbfad08d8cbd394adabcae56ddeee4b",
+      "pages": 45,
+      "version": 6
     },
     {
       "site_path": "papers/surface-regularization.pdf",
